@@ -1,10 +1,11 @@
 const express = require('express'),
  routes = require('../routes/index'),
  env = require('./env/env'),
- morgan = require('morgan'),                    // morgan HTTP request logger Middleware
+ morgan = require('morgan'),                            // morgan HTTP request logger Middleware
  bodyParser = require('body-parser'),
  compress = require('compression'),
  methodOverrride = require('method-override');
+
 
 module.exports = (app) => {
     env(app);
