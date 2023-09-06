@@ -1,17 +1,19 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 /* To fix all deprecation warnings : https://mongoosejs.com/docs/deprecations.html */
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
-mongoose.set('useUnifiedTopology', true);
+mongoose.set("useNewUrlParser", true);
+mongoose.set("useFindAndModify", false);
+mongoose.set("useCreateIndex", true);
+mongoose.set("useUnifiedTopology", true);
 
-const mongoDB = 'mongodb://localhost:3333/MEAN_web_dev';
+const mongoDB = "mongodb://localhost:3333/MEAN_web_dev";
 
 mongoose.connect(mongoDB, (err) => {
-    if(err) {console.log(err)}
+  if (err) {
+    console.log(err);
+  }
 });
 
-mongoose.connection.on('open', () => {
-    console.log('mongoose conneted')
+mongoose.connection.on("open", () => {
+  console.log("mongoose conneted");
 });

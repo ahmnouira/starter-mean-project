@@ -1,15 +1,14 @@
-
-body{
-    background-color: #1e272e;
-} 
+body {
+  background-color: #1e272e;
+}
 
 h1 {
-    /* color: slateblue */
-    color: #d2dae2;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  /* color: slateblue */
+  color: #d2dae2;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 img {
-    margin-left: 40%;    
+  margin-left: 40%;
 }
