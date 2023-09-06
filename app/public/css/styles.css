@@ -1,14 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color: #1e272e;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 100vh;
+}
+
+.container {
+  margin: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 h1 {
-  /* color: slateblue */
   color: #d2dae2;
-  text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 img {
-  margin-left: 40%;
+  margin-top: 8px;
+  object-fit: contain;
 }

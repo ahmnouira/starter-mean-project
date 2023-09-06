@@ -14,6 +14,8 @@ module.exports = (app) => {
   } else if (app.get("env") === "production") {
     app.use(compress());
   }
+  //express.static: to server static files such as images css, js
+  app.use(express.static("./app/public"));
 
   app.set("views", "./app/views");
 
@@ -23,7 +25,5 @@ module.exports = (app) => {
   routes.home(app);
   routes.users(app);
 
-  //express.static : to server static files such as images css, js
-  app.use(express.static("./app/public"));
   return app;
 };
